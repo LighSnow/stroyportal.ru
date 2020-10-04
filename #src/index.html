@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/@trevoreyre/autocomplete-js/dist/style.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>Стройпортал.ру</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__top-inner">
+					<div class="header__region">
+						<a href="#">
+							<svg class="marker-svg">
+								<use xlink:href="./svg/sprite.svg#marker"></use>
+							</svg>
+							<span>Волгоградская область</span>
+						</a>
+					</div>
+					<nav class="header__nav">
+						<ul>
+							<li>
+								<a href="#">Тендеры</a>
+							</li>
+							<li>
+								<a href="#">База подрядчиков</a>
+							</li>
+							<li>
+								<a href="#"><span>Другие сервисы</span>
+									<svg class="arrow-svg">
+										<use xlink:href="./svg/sprite.svg#arrow"></use>
+									</svg>
+								</a>
+								<ul class="submenu">
+									<li><a href="#">Другие сервисы</a></li>
+									<li><a href="#">Другие сервисы</a></li>
+									<li><a href="#">Другие сервисы</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="header__bottom-inner">
+					<div class="header__logo">
+						<a href="#">
+							<img src="./img/logo.svg" alt="" />
+						</a>
+					</div>
+					<div class="header__catalog">
+						<a href="#" class="header__catalog-btn">
+							<svg class="menu-svg">
+								<use xlink:href="./svg/sprite.svg#menu"></use>
+							</svg>
+							<span>Каталог</span>
+						</a>
+					</div>
+					<div id="autocomplete" class="autocomplete header__search">
+						<input class="autocomplete-input" placeholder="Хочу найти..." aria-label="Хочу найти...">
+						<ul class="autocomplete-result-list"></ul>
+						<button type="submit" class="header__search-btn btn">
+							<svg class="search-svg">
+								<use xlink:href="./svg/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="header__list">
+						<a href="#" class="header__list-link">
+							<svg class="list-svg">
+								<use xlink:href="./svg/sprite.svg#list"></use>
+							</svg>
+							<span>Список</span>
+						</a>
+					</div>
+					<div class="header__user">
+						<a href="#" class="header__user-link">
+							<span>A</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<script src="https://unpkg.com/@trevoreyre/autocomplete-js"></script>
+	<!-- <script src="js/libs.js"></script> -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
